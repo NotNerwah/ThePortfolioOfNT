@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Noah Trude Portfolio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx nodemon --exec npx babel-node index.js",
+    "reap": "ps aux | grep nodemon | grep -v grep | awk '{print $2}' | xargs kill -9",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NotNerwah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "morgan": "^1.10.0",
+    "traceroute": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.8",
+    "nodemon": "^3.0.2"
+  }
+}
